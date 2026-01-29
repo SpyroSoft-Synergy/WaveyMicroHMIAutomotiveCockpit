@@ -1,0 +1,8 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.watch_iface 1.0;
+
+interface Watch {
+    readonly int currentClock
+
+    void setClock(int index)
+}

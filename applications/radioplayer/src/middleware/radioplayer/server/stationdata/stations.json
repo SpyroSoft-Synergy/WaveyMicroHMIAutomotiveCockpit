@@ -1,0 +1,29 @@
+{
+    "stations": [
+        {
+            "name": "XIT FM",
+            "frequency": 89,
+            "cover": "xit_fm.png"
+        },
+        {
+            "name": "BBC News",
+            "frequency": 97.5,
+            "cover": "bbc.png"
+        },
+        {
+            "name": "BBC Radio 4",
+            "frequency": 94.0,
+            "cover": "bbc_4.png"
+        },
+        {
+            "name": "Eska",
+            "frequency": 100.7,
+            "cover": "eska.png"
+        },
+        {
+            "name": "Trójka",
+            "frequency": 87,
+            "cover": "trojka.png"
+        }
+    ]
+}

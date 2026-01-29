@@ -1,0 +1,21 @@
+formatVersion: 1
+formatType: am-configuration
+---
+
+ui:
+  mainQml: "${CONFIG_PWD}/sysUI/GestureScreenWindow.qml"
+
+runtimes:
+  qml:
+    environmentVariables:
+       LD_LIBRARY_PATH: "extend_path:${CONFIG_PWD}/lib"
+       PATH: "extend_path:${CONFIG_PWD}/lib"
+
+systemProperties:
+  public:
+    isGestureScreen: true
+    isMainScreen: false
+  protected:
+    developmentMode: true
+    screenWidth: 405
+    screenHeight: 720

@@ -1,0 +1,36 @@
+{
+    "routes" : [
+        {
+            "destination": "52.365431, 13.509923",
+            "name": "routeOfficeBerlin"
+        },
+        {
+            "destination": "53.387398, 14.477546",
+            "name": "routeOfficeWarzymice"
+        },
+        {
+            "destination": "53.453708, 14.560547",
+            "name": "routeOfficeMcdonald"
+        },
+        {
+            "destination": "53.449943, 14.535584",
+            "name": "routeWarzymiceOffice"
+        },
+        {
+            "destination": "36.209079, -115.199729",
+            "name": "routeExpoAirport"
+        },
+        {
+            "destination": "36.120164, -115.264494",
+            "name": "routeExpoHome"
+        },
+        {
+            "destination": "36.165119, -115.062212",
+            "name": "routeExpoWalmart"
+        },
+        {
+            "destination": "36.109705, -115.172802",
+            "name": "routeExpoBurger"
+        }
+    ]
+}

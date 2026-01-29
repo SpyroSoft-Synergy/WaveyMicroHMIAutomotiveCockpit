@@ -1,0 +1,3 @@
+WeatherViewModelBase WeatherViewModelBase.qml
+GestureScreenViewModel GestureScreenViewModel.qml
+MainScreenViewModel MainScreenViewModel.qml

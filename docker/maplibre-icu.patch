@@ -1,0 +1,20 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0c58a0b8f..0010e3166 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -997,6 +997,15 @@ include(${PROJECT_SOURCE_DIR}/vendor/unique_resource.cmake)
+ include(${PROJECT_SOURCE_DIR}/vendor/vector-tile.cmake)
+ include(${PROJECT_SOURCE_DIR}/vendor/wagyu.cmake)
+ 
++if (LINUX)
++    message(STATUS "Added icu to link libraries...")
++    target_link_libraries(
++        mbgl-core
++        PRIVATE
++            icuuc icui18n icuio
++    )
++endif()
++
+ target_link_libraries(
+     mbgl-core
+     PRIVATE

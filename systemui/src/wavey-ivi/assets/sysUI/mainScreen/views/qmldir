@@ -1,0 +1,3 @@
+ApplicationsView ApplicationsView.qml
+UserGuideView UserGuideView.qml
+ClusterView ClusterView.qml

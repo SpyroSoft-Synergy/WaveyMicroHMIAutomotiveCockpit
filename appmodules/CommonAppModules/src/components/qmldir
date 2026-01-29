@@ -1,0 +1,5 @@
+ListCarousel ListCarousel.qml
+ScreenSwitcher ScreenSwitcher.qml
+SwapableImage SwapableImage.qml
+PlaylistScroll PlaylistScroll.qml
+ActiveDelegateMarker ActiveDelegateMarker.qml

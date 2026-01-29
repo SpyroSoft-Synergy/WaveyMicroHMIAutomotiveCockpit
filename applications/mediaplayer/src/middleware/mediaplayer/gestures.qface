@@ -1,0 +1,32 @@
+module com.spyro_soft.wavey.MediaPlayer 1.0;
+
+enum MediaPlayerType {
+    Unknown,
+    Swipe,
+    Drag,
+    Tap,
+    DoubleTap,
+    Scroll,
+    Pinch
+}
+
+enum MediaPlayerDirection {
+    None,
+    Left,
+    Top,
+    Right,
+    Bottom
+}
+
+struct MediaPlayerChangeValues {
+    int x;
+    int y;
+    real scale;
+}
+
+@config: { qml_type: "MediaPlayerDetector" }
+interface MediaPlayerDetector {
+  signal mediaplayerDetected(int id, MediaPlayerType type, MediaPlayerDirection direction, int fingerCount, MediaPlayerChangeValues changeValues);
+  signal mediaplayerUpdated(int id, MediaPlayerType type, MediaPlayerDirection direction, int fingerCount, MediaPlayerChangeValues changeValues);
+  void propagateMediaPlayer(int id, MediaPlayerType type, MediaPlayerDirection direction, int fingerCount, MediaPlayerChangeValues changeValues);
+}

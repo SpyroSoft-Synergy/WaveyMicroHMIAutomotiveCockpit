@@ -1,0 +1,10 @@
+WatchSwitch WatchSwitch.qml
+AnalogClock AnalogClock.qml
+SingleFlipClock SingleFlipClock.qml
+SingleFlipClockTopPanel SingleFlipClockTopPanel.qml
+SingleFlipClockBottomPanel SingleFlipClockBottomPanel.qml
+FlipClock FlipClock.qml
+CityModel CityModel.qml
+CityListVertical CityListVertical.qml
+CityListHorizontal CityListHorizontal.qml
+DateLabel DateLabel.qml

@@ -1,0 +1,5 @@
+BlurEffect BlurEffect.qml
+BlurHelper BlurHelper.qml
+CoverBlur CoverBlur.qml
+DesaturationEffect DesaturationEffect.qml
+RoundedItem RoundedItem.qml

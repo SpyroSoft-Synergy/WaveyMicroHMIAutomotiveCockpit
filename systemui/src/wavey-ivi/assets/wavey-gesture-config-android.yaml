@@ -1,0 +1,16 @@
+formatVersion: 1
+formatType: am-configuration
+---
+
+ui:
+  mainQml: "${CONFIG_PWD}/sysUI/GestureScreenWindow.qml"
+  fullscreen: true
+
+systemProperties:
+  public:
+    isGestureScreen: true
+    isMainScreen: false
+  protected:
+    developmentMode: false
+    screenWidth: 1080
+    screenHeight: 1920

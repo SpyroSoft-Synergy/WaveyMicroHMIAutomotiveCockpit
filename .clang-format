@@ -1,0 +1,137 @@
+# Clang-format configuration for Wavey HMI project
+# Based on LLVM style with modern C++ conventions
+
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentCaseLabels: false
+IndentPPDirectives: BeforeHash
+IndentWrappedFunctionNames: false
+NamespaceIndentation: None
+
+# Line width and wrapping
+ColumnLimit: 120
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Right
+AlignOperands: true
+AlignTrailingComments: true
+
+# Braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: true
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: true
+  AfterNamespace: false
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+# Spacing
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Pointers and references
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+# Short statements
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: false
+
+# Breaking
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: true
+BinPackParameters: true
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList: BeforeColon
+BreakStringLiterals: true
+
+# Constructor initializers
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 4
+
+# Includes
+IncludeBlocks: Regroup
+IncludeCategories:
+  # Qt headers
+  - Regex: '^<Q.*>'
+    Priority: 2
+    SortPriority: 2
+  # Standard library headers
+  - Regex: '^<[a-z_]+>'
+    Priority: 3
+    SortPriority: 3
+  # System headers with extension
+  - Regex: '^<.*\.h>'
+    Priority: 4
+    SortPriority: 4
+  # Project headers
+  - Regex: '^".*"'
+    Priority: 1
+    SortPriority: 1
+SortIncludes: true
+
+# Penalties
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+
+# Misc
+AccessModifierOffset: -4
+CompactNamespaces: false
+Cpp11BracedListStyle: true
+EmptyLineBeforeAccessModifier: Always
+FixNamespaceComments: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+ReflowComments: true
+SortUsingDeclarations: true
+Standard: c++17

@@ -1,0 +1,16 @@
+formatVersion: 1
+formatType: am-configuration
+---
+
+ui:
+  mainQml: "${CONFIG_PWD}/sysUI/MainScreenWindow.qml"
+  fullscreen: true
+
+systemProperties:
+  public:
+    isGestureScreen: false
+    isMainScreen: true
+  protected:
+    developmentMode: false
+    screenWidth: 3840
+    screenHeight: 1080

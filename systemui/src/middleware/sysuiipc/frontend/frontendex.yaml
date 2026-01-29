@@ -1,0 +1,25 @@
+frontendex:
+    module:
+        documents:
+            - '{{module.module_name|lower}}global.h': 'frontend/global.h.tpl'
+            - '{{module.module_name|lower}}.h': 'module.h.tpl'
+            - '{{module.module_name|lower}}.cpp': 'module.cpp.tpl'
+            - '{{module.module_name|lower}}module_enum.qdocinc': 'frontend/module_qml_enum.qdocinc.tpl'
+            - '{{module.module_name|lower}}factory.h': 'frontend/modulefactory.h.tpl'
+            - '{{module.module_name|lower}}factory.cpp': 'frontend/modulefactory.cpp.tpl'
+            - '{{srcBase|lower}}.pri': 'frontend/module.pri.tpl'
+            - '{{srcBase|lower}}.cmake': 'frontend/CMakeLists.txt.tpl'
+            - 'qml/{{module|qml_type|replace(".", "/")}}/plugins.qmltypes': 'common/plugins.qmltypes.tpl'
+            - "qml/{{module|qml_type|replace('.', '/')}}/designer/{{module.module_name|lower}}.metainfo": "common/designer.metainfo.tpl"
+            - 'qml/{{module|qml_type|replace(".", "/")}}/qmldir': 'common/qmldir.tpl'
+    interface:
+        documents:
+            - '{{interface|lower}}backendinterface.h': 'frontend/backendinterface.h.tpl'
+            - '{{interface|lower}}backendinterface.cpp': 'frontend/backendinterface.cpp.tpl'
+            - '{{interface|lower}}.h': 'frontend/interface.h.tpl'
+            - '{{interface|lower}}_p.h': 'frontend/interface_p.h.tpl'
+            - '{{interface|lower}}.cpp': 'frontend/interface.cpp.tpl'
+    struct:
+        documents:
+            - '{{struct|lower}}.h': 'frontend/struct.h.tpl'
+            - '{{struct|lower}}.cpp': 'frontend/struct.cpp.tpl'

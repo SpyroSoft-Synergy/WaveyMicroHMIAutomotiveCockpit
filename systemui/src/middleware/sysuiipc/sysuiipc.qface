@@ -1,0 +1,87 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.sysuiipc 1.0;
+
+enum GestureType {
+    Unknown,
+    Swipe,
+    Drag,
+    Tap,
+    DoubleTap,
+    Scroll,
+    Pinch,
+    TapAndHold
+}
+
+enum GestureDirection {
+    None,
+    Left,
+    Top,
+    Right,
+    Bottom
+}
+
+struct GestureChangeValues {
+    int x;
+    int y;
+    real scale;
+    bool released;
+}
+
+enum GestureAnimation {
+    UnkownAnimation,
+    DoubleTap1,
+    DoubleTap2,
+    TapAndHold1,
+    Swipe1Right,
+    Swipe2Up,
+    Swipe2Down,
+    Swipe3Up,
+    Swipe3Down,
+    Scroll1Right,
+    Scroll1Top,
+    Scroll1Down,
+    Scroll2Right,
+    Scroll2Left,
+    Drag3Up,
+    Drag3Down,
+    Drag2Up,
+    Drag2Down,
+    ZoomOut,
+    AnimationCount
+}
+
+@config: { qml_type: "GestureDetector" }
+interface GestureDetector {
+  signal gestureDetected(int id, GestureType type, GestureDirection direction, int fingerCount, GestureChangeValues changeValues);
+  signal gestureUpdated(int id, GestureType type, GestureDirection direction, int fingerCount, GestureChangeValues changeValues);
+  signal gestureReleased(int id, GestureType type, int fingerCount);
+  signal gestureAnimationDetected(int id, GestureAnimation animationId);
+  signal touchActionDetected(bool pressed);
+  void propagateGestureAnimation(int id, GestureAnimation animationId);
+  void propagateGesture(int id, GestureType type, GestureDirection direction, int fingerCount, GestureChangeValues changeValues);
+  void propagateTouchAction(bool pressed);
+}
+
+struct AppSlot {
+    string name
+    string appId
+}
+
+interface AppSlots {
+    model<AppSlot> appSlots
+    int currentAppSlotIndex
+
+    void appendSlot(string name, string appId)
+    void setSlotName(int index, string name)
+    void setSlotAppId(int index, string appId)
+    void removeSlot(int index)
+    void moveSlot(int from, int to)
+
+    signal dataMoved(int from, int to)
+}
+
+@config: { qml_type: "AppStyle" }
+interface AppStyle {
+    signal themeChanged(int theme);
+    void propagateThemeChange(int theme);
+}

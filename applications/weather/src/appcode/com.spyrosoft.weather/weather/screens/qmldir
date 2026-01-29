@@ -1,0 +1,3 @@
+MainScreen MainScreen.qml
+ClusterScreen ClusterScreen.qml
+GestureScreen GestureScreen.qml

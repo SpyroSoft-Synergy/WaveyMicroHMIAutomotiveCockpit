@@ -1,0 +1,3 @@
+MediaPlayerViewModelBase MediaPlayerViewModelBase.qml
+GestureScreenViewModel GestureScreenViewModel.qml
+MainScreenViewModel MainScreenViewModel.qml

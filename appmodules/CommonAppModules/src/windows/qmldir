@@ -1,0 +1,5 @@
+singleton ApplicationWindowsConsts ApplicationWindowsConsts.qml
+ClusterWindow ClusterWindow.qml
+GestureScreenWindow GestureScreenWindow.qml
+MainScreenWindow MainScreenWindow.qml
+internal WaveyWindowBase WaveyWindowBase.qml

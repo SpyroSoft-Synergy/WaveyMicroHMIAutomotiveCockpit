@@ -1,0 +1,3 @@
+NavigationViewModelBase NavigationViewModelBase.qml
+GestureScreenViewModel GestureScreenViewModel.qml
+MainScreenViewModel MainScreenViewModel.qml

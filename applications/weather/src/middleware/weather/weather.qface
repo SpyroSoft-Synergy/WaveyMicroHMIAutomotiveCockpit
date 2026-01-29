@@ -1,0 +1,74 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.weather_iface 1.0;
+
+struct City {
+    string icon
+    string city
+    string country
+    int temperature
+}
+
+struct SearchCity {
+    string city
+    string region
+    string country
+    bool bSaved
+    string searchinput
+}
+
+struct ForecastHour {
+    string icon
+    string hour
+    int humidity
+    int temperature
+    bool isSun
+}
+
+struct DetailedWeather {
+    string icon
+    string city
+    string country
+    int temperature
+    int feelslike
+    string sunset
+    string sunrise
+
+    list<ForecastHour> forecast
+    int minTemp
+    int maxTemp
+}
+
+struct ClusterWeather
+{
+    string icon
+    int humidity
+    string windstrength
+    int visiblekm
+    string cloudiness
+}
+
+struct ServerData
+{
+    bool bhasconnection
+}
+
+interface Weather {
+    readonly list<City> briefWeather
+    readonly DetailedWeather detailedWeather
+    readonly list<SearchCity> searchAutofill
+    readonly list<SearchCity> recentSearch
+    readonly ClusterWeather clusterWeather
+    readonly ServerData serverData
+
+    void requestBriefWeather(string city)
+    void requestDetailedWeather(string city)
+    void requestSearchAutofill(string query)
+
+    void removeCity(int index)
+    void setMainCity(int index)
+    void moveCity(int from, int to, bool bemitchanged)
+    void makeRecent(int index)
+    void clearSearch()
+    void refreshWeatherData()
+    void updateSearchInput(string newinput)
+}

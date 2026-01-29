@@ -1,0 +1,3 @@
+#!/bin/bash
+
+adb shell pm list packages | grep -q com.spyrosoft.wavey && adb uninstall com.spyrosoft.wavey && for i in 1 2 3; do adb wait-for-device && (adb shell pm list packages | grep -q com.spyrosoft.wavey) || break; sleep 30; done && (adb shell pm list packages | grep -q com.spyrosoft.wavey && echo "++++++++ ERROR - Fail uninstalling apk ++++++++"); exit 1 || echo "++++++++ SUCCESS - com.spyrosoft.wavey was installed ++++++++"

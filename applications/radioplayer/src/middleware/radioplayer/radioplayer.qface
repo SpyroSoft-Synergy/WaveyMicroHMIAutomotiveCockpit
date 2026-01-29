@@ -1,0 +1,23 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.radioplayer_iface 1.0;
+
+struct Station {
+    string name
+    string coverUrl
+    real frequency
+}
+
+struct PlaybackInfo {
+    bool isPlaying
+    int currentStationNumber
+}
+
+interface RadioPlayer {
+    readonly list<Station> stations
+    readonly PlaybackInfo playbackInfo
+
+    void togglePlayback()
+    void nextStation()
+    void setStation(int index)
+    void prevStation()
+}

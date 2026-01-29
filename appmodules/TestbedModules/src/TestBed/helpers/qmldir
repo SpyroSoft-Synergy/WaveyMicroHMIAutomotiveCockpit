@@ -1,0 +1,2 @@
+singleton IntentsServerHelper IntentsServerHelper.qml
+singleton WindowPropertiesHelper WindowPropertiesHelper.qml

@@ -1,0 +1,3 @@
+WatchViewModelBase WatchViewModelBase.qml
+GestureScreenViewModel GestureScreenViewModel.qml
+MainScreenViewModel MainScreenViewModel.qml

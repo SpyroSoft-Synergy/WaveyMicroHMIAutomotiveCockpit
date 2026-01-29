@@ -1,0 +1,3 @@
+RadioPlayerViewModelBase RadioPlayerViewModelBase.qml
+GestureScreenViewModel GestureScreenViewModel.qml
+MainScreenViewModel MainScreenViewModel.qml

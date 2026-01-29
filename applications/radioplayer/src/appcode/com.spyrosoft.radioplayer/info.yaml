@@ -1,0 +1,14 @@
+formatVersion: 1
+formatType: am-application
+---
+id:      'com.spyrosoft.radioplayer'
+icon:    'icon.png'
+code:    'main.qml'
+runtime: 'qml'
+name:
+  en: 'RadioPlayer'
+categories: ["media"]
+intents:
+- id: handleGesture
+runtimeParameters:
+  importPaths: [""]

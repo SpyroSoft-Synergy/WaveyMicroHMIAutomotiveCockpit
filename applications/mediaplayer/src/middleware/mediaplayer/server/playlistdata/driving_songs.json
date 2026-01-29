@@ -1,0 +1,96 @@
+{
+    "playlistName": "Driving songs",
+    "songs": [
+        {
+            "title": "Interstellar Midnight",
+            "artist": "Musifarra",
+            "album": "Flower shower",
+            "duration": "3:38",
+            "cover": "cover1.png"
+        },
+        {
+            "title": "Culturally Responsive Rumba",
+            "artist": "MelodyBeat",
+            "album": "Spilled beans",
+            "duration": "4:19",
+            "cover": "cover2.png"
+        },
+        {
+            "title": "Shadows Of Dream",
+            "artist": "Pinta",
+            "album": "Fifth chance",
+            "duration": "3:11",
+            "cover": "cover3.png"
+        },
+        {
+            "title": "Break Dreamer",
+            "artist": "Ingenious",
+            "album": "Knowledge bomb",
+            "duration": "2:56",
+            "cover": "cover4.png"
+        },
+        {
+            "title": "Enjoy Days",
+            "artist": "PitchMusic",
+            "album": "Honesty",
+            "duration": "2:54",
+            "cover": "cover5.png"
+        },
+        {
+            "title": "Reach For Style",
+            "artist": "Chordata",
+            "album": "Sweetbitter",
+            "duration": "2:33",
+            "cover": "cover6.png"
+        },
+        {
+            "title": "Boisterous Night",
+            "artist": "BeatBuddy",
+            "album": "Bakrupcy",
+            "duration": "3:38",
+            "cover": "cover7.png"
+        },
+        {
+            "title": "I Care About Tale",
+            "artist": "Zexi",
+            "album": "So far so great",
+            "duration": "3:49",
+            "cover": "cover8.png"
+        },
+        {
+            "title": "Sound of November",
+            "artist": "Fiddle",
+            "album": "Here we go again",
+            "duration": "2:39",
+            "cover": "cover9.png"
+        },
+        {
+            "title": "Soft June",
+            "artist": "BeatBlender",
+            "album": "MVP",
+            "duration": "3:10",
+            "cover": "cover10.png"
+        },
+        {
+            "title": "Everyone Need Casino",
+            "artist": "Songwriter",
+            "album": "Rain check",
+            "duration": "3:08",
+            "cover": "cover11.png"
+        },
+        {
+            "title": "Diversion",
+            "artist": "Rave",
+            "album": "Beyond infinity",
+            "duration": "4:23",
+            "cover": "cover12.png"
+        },
+        {
+            "title": "Into You",
+            "artist": "Haus",
+            "album": "Elephant in the room",
+            "duration": "4:45",
+            "cover": "cover13.png"
+        }
+    ]
+}

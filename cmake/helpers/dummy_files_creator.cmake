@@ -1,0 +1,17 @@
+# This is workaround for https://bugreports.qt.io/browse/QTBUG-107627
+function(add_dummy_files DIRECTORY)
+  file(GLOB DIR_FILES ${DIRECTORY}/*)
+  set(REGULAR_FILE_FOUND FALSE)
+  foreach(DIR_FILE ${DIR_FILES})
+    if(IS_DIRECTORY ${DIR_FILE})
+      add_dummy_files(${DIR_FILE})
+    else()
+      set(REGULAR_FILE_FOUND TRUE)
+    endif()
+  endforeach()
+  if(NOT REGULAR_FILE_FOUND)
+    file(TOUCH ${DIRECTORY}/dummy_placeholder)
+  endif()
+endfunction()
+
+add_dummy_files(${ROOT_DIRECTORY})

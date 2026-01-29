@@ -1,0 +1,11 @@
+ActiveSongMarker ActiveSongMarker.qml
+ListCarousel ListCarousel.qml
+LoopingButton LoopingButton.qml
+PlaylistScroll PlaylistScroll.qml
+RandomButton RandomButton.qml
+RotatingCover RotatingCover.qml
+ScreenSwitcher ScreenSwitcher.qml
+SongBar SongBar.qml
+SongInList SongInList.qml
+SwapableImage SwapableImage.qml
+VolumeSlider VolumeSlider.qml

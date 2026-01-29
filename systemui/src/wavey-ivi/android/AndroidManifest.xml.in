@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.spyrosoft.wavey" android:installLocation="auto" android:versionCode="1" android:versionName="@Wavey_VERSION@">
+    <!-- %%INSERT_PERMISSIONS -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- %%INSERT_FEATURES -->
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:name="org.qtproject.qt.android.bindings.QtApplication" android:hardwareAccelerated="true" android:label="Wavey" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false" android:allowBackup="true" android:fullBackupOnly="false">
+        <activity android:name="com.spyrosoft.wavey.MainScreen" android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density" android:label="MainScreen" android:launchMode="singleTop" android:screenOrientation="unspecified" android:exported="true" android:process="com.spyrosoft.wavey.MainScreen" android:taskAffinity="com.spyrosoft.wavey.MainScreen">
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SECONDARY_HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
+            <meta-data android:name="android.app.arguments" android:value="--no-cache --config-file assets:/wavey-common-config.yaml --config-file assets:/wavey-main-config-android.yaml --disable-installer --verbose --recreate-database --clear-cache "/>
+            <meta-data android:name="android.app.extract_android_style" android:value="minimal"/>
+        </activity>
+        <activity android:name="com.spyrosoft.wavey.GestureScreen" android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density" android:label="MainScreen" android:launchMode="singleTop" android:screenOrientation="unspecified" android:exported="true" android:process="com.spyrosoft.wavey.GestureScreen" android:taskAffinity="com.spyrosoft.wavey.GestureScreen">
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
+            <meta-data android:name="android.app.arguments" android:value="--no-cache --config-file assets:/wavey-common-config.yaml --config-file assets:/wavey-gesture-config-android.yaml --disable-installer --verbose --recreate-database --clear-cache "/>
+            <meta-data android:name="android.app.extract_android_style" android:value="minimal"/>
+        </activity>
+    </application>
+</manifest>

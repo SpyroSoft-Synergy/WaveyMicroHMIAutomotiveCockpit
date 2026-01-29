@@ -1,0 +1,3 @@
+ApplicationManagerWindow 2.0 ApplicationManagerWindow.qml
+IntentHandler 2.0 IntentHandler.qml
+singleton ApplicationInterface 2.0 ApplicationInterface.qml

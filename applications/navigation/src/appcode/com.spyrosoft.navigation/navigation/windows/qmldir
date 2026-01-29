@@ -1,0 +1,3 @@
+GestureScreenWindow GestureScreenWindow.qml
+MainScreenWindow MainScreenWindow.qml
+ClusterWindow ClusterWindow.qml

@@ -1,0 +1,46 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.navigation_iface 1.0;
+
+struct GeoPoint {
+    real latitude;
+    real longitude;
+}
+
+struct Route {
+    string id;
+    var bounds;
+    int travelTime;
+    real distance;
+    real distanceTravelled;
+    list<GeoPoint> path;
+}
+
+enum Direction {
+    Left, Right, Up, Down
+}
+
+struct DirectionsStep {
+    Direction direction;
+    real distance;
+    string streetName;
+    GeoPoint referencePoint;
+}
+
+interface Navigation {
+    readonly real zoomLevel;
+    readonly Route currentRoute;
+    readonly list<DirectionsStep> directions;
+    readonly GeoPoint position;
+    readonly real rotation;
+
+    void stopZoom();
+    void updateZoom(real pinchScale);
+
+    void setDestination(GeoPoint point);
+    void setDestinationLatLong(real latitude, real longitude);
+    void popDirectionsStep();
+
+    void setSimulatorMode(bool value);
+
+    signal newRouteStarted();
+}

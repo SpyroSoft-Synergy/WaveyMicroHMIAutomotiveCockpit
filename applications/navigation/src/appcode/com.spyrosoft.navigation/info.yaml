@@ -1,0 +1,14 @@
+formatVersion: 1
+formatType: am-application
+---
+id:      'com.spyrosoft.navigation'
+icon:    'icon.png'
+code:    'main.qml'
+runtime: 'qml'
+name:
+  en: 'Navigation'
+categories: ["navigation"]
+intents:
+- id: handleGesture
+runtimeParameters:
+  importPaths: [""]

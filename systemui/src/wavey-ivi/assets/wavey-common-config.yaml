@@ -1,0 +1,36 @@
+formatVersion: 1
+formatType: am-configuration
+---
+applications:
+  builtinAppsManifestDir: "${CONFIG_PWD}/builtinApps"
+
+installer:
+  disable: true
+
+ui:
+  importPaths: [ "${CONFIG_PWD}/sysUI", "${CONFIG_PWD}/qml-plugins"]
+
+runtimes:
+  qml:
+    importPaths: ["${CONFIG_PWD}/qml-plugins"]
+    pluginPaths: ["${CONFIG_PWD}"]
+
+logging:
+  rules:
+    - "*=false"
+    - "*.debug=false"
+    - "*.info=false"
+    - "am.*=false"
+    - "qml*=true"
+    - "*.warning=true"
+    - "*.critical=true"
+
+systemProperties:
+  protected:
+    light: on
+    nullValueCrashCheckOnDBus: ~
+
+# development setup:
+flags:
+  noSecurity: yes
+  noUiWatchdog: yes

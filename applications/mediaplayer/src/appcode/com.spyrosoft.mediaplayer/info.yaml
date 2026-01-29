@@ -1,0 +1,14 @@
+formatVersion: 1
+formatType: am-application
+---
+id:      'com.spyrosoft.mediaplayer'
+icon:    'icon.png'
+code:    'main.qml'
+runtime: 'qml'
+name:
+  en: 'Media Player'
+categories: ["media"]
+intents:
+- id: handleGesture
+runtimeParameters:
+  importPaths: [""]

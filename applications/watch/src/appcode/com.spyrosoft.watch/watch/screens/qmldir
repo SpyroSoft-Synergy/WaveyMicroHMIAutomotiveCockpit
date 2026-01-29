@@ -1,0 +1,5 @@
+MainScreen MainScreen.qml
+ClusterScreen ClusterScreen.qml
+GestureScreen GestureScreen.qml
+AnalogClockScreen AnalogClockScreen.qml
+DigitalClockScreen DigitalClockScreen.qml

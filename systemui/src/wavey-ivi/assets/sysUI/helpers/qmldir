@@ -1,0 +1,4 @@
+GestureRecognizer GestureRecognizer.qml
+GesturesEmulationPanel GesturesEmulationPanel.qml
+GesturesEmulationMenu GesturesEmulationMenu.qml
+WindowsModelObserver WindowsModelObserver.qml

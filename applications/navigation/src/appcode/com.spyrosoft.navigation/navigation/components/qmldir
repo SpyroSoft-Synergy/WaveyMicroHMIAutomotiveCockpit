@@ -1,0 +1,6 @@
+MapInfoBox MapInfoBox.qml
+DirectionsList DirectionsList.qml
+NavigationBlock NavigationBlock.qml
+NavigationModel NavigationModel.qml
+SearchButton SearchButton.qml
+RouteProperty RouteProperty.qml

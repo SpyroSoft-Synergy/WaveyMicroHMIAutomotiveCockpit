@@ -1,0 +1,5 @@
+add_subdirectory(appcode)
+add_subdirectory(middleware)
+if(BUILD_TESTBED)
+    add_subdirectory(testbed)
+endif()

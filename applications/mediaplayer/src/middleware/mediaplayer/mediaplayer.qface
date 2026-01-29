@@ -1,0 +1,42 @@
+@config: { namespace: "module" }
+module com.spyro_soft.wavey.media 1.0;
+
+struct Song {
+    string title
+    string artist
+    string album
+    string coverUrl
+    string durationString
+    int duration   
+}
+
+struct Playlist {
+   string name
+   list<Song> songs
+}
+
+struct PlaybackInfo {
+    bool isPlaying
+    int currentTrackNumber
+    int currentTrackDuration;
+    int absoluteTrackPosition
+    real relativeTrackPosition
+    int volume
+    bool isRandom
+    bool isLooping
+}
+
+interface MediaPlayer {
+    readonly list<Playlist> playlists
+    readonly Playlist currentPlaylist
+    readonly PlaybackInfo playbackInfo
+
+    void togglePlayback()
+    void nextSong()
+    void prevSong()
+    void switchPlaylist(string name)
+    void toggleRandom()
+    void toggleLooping()
+    void advanceSongProgress(int value)
+    void changeVolume(int volume)
+}
